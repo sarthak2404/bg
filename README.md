@@ -1,1 +1,1 @@
-# bg
+Simple Background Gradient generator website
