@@ -42,5 +42,13 @@ function copyToClipboard(element) {
     $temp.val($(element).text()).select();
     document.execCommand("copy");
     $temp.remove();
+	
+    // changing button text to "COPIED" from copy
+    var copyButton = document.querySelector(".btn-2");
+    copyButton.textContent = "COPIED!";
+    // changing button text back to "COPY" after 1.5 seconds
+    setTimeout(function () {
+        copyButton.textContent = "COPY";
+    }, 1000);
   }
   
