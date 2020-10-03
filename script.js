@@ -49,6 +49,6 @@ function copyToClipboard(element) {
     // changing button text back to "COPY" after 1.5 seconds
     setTimeout(function () {
         copyButton.textContent = "COPY";
-    }, 1500);
+    }, 1000);
   }
   
